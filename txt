@@ -19,6 +19,10 @@
 <i class="ri-search-line"></i>
 <i class="fa-solid fa-microphone"></i>
 <i class="fa-solid fa-pen-to-square"></i>
+<i class="ri-edit-box-line"></i>
+<i class="ri-subtract-line"></i>
+<i class="ri-checkbox-multiple-blank-line"></i>
+<i class="ri-close-line"></i>
 
 | Purpose | Color | Hex Code | | ---------------------------------- |
 ----------- | --------- | | WhatsApp Green (Brand color) | Green | `#25D366` | |
