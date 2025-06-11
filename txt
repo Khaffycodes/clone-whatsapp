@@ -1,0 +1,29 @@
+<i class="fa-solid fa-bars"></i>
+<i class="fa-brands fa-whatsapp"></i>
+<i class="ri-chat-3-line"></i>
+<i class="ri-chat-smile-3-line"></i>
+<i class="ri-phone-line"></i>
+<i class="ri-donut-chart-line"></i>
+<i class="fa-regular fa-circle"></i>
+<i class="fa-regular fa-star"></i>
+<i class="ri-archive-line"></i>
+<i class="ri-settings-5-line"></i>
+<i class="fa-brands fa-whatsapp"></i>
+<i class="ri-filter-3-line"></i>
+<i class="fa-regular fa-face-smile"></i>
+<i class="ri-pushpin-line"></i>
+<i class="ri-loader-3-fill"></i>
+<i class="ri-attachment-2"></i>
+<i class="ri-video-on-line"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="ri-search-line"></i>
+<i class="fa-solid fa-microphone"></i>
+<i class="fa-solid fa-pen-to-square"></i>
+
+| Purpose | Color | Hex Code | | ---------------------------------- |
+----------- | --------- | | WhatsApp Green (Brand color) | Green | `#25D366` | |
+Darker Green (Header/chat bubbles) | Green Dark | `#075E54` | | Chat Background
+| Light Beige | `#ECE5DD` | | Sent Message Bubble | Light Green | `#DCF8C6` | |
+Received Message Bubble | White | `#FFFFFF` | | Input Area Background | Light
+Gray | `#F0F0F0` | | Timestamp Text | Gray | `#999999` | | Message Text | Dark
+Gray | `#303030` |
