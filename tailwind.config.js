@@ -7,6 +7,7 @@ module.exports = {
         primaryColor: '#25D366',
         primaryColorLight: '#075E54',
         chatbckColor: '#ECE5DD',
+        whiteColor: '#fff',
         sentColor: '#DCF8C6',
         receivedColor: '#fff',
         inputColor: '#F0F0F0',

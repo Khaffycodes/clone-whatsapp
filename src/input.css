@@ -2,7 +2,7 @@
 @tailwind utilities;
 @tailwind components;
 
-.chat-box {
+.chat-bo {
   width: 300px;
   height: 400px;
   border: 1px solid #ccc;
@@ -70,85 +70,22 @@ body {
   background-color: #e5ddd5;
 }
 
-.app {
-  display: flex;
-  height: 100vh;
-}
-
-.sidebar {
-  /* width: 30%; */
-  background-color: #f0f0f0;
-  border-right: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar-header {
-  padding: 15px;
-  font-weight: bold;
-  background-color: #ededed;
-  border-bottom: 1px solid #ccc;
-}
-
-.chat-preview {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-}
-
-.chat-window {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #ece5dd;
-}
-
-.chat-header {
-  background-color: #f0f0f0;
-  padding: 15px;
-  font-weight: bold;
-  border-bottom: 1px solid #ccc;
-}
-
-.messages {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .message {
-  max-width: 60%;
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-size: 14px;
+  @apply max-w-[60%] px-3 py-4 rounded-xl text-[14px];
 }
 
 .received {
-  background-color: #fff;
-  align-self: flex-start;
+  @apply bg-receivedColor justify-start;
 }
 
 .sent {
-  background-color: #dcf8c6;
-  align-self: flex-end;
+  @apply bg-sentColor justify-end;
 }
 
 .input-bar {
-  display: flex;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-top: 1px solid #ccc;
 }
 
 .input-bar input {
-  flex: 1;
-  padding: 8px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  outline: none;
 }
 
 .input-bar button {

@@ -26,7 +26,8 @@
 
   <body class="bg-[#eee] h-full">
     <main class="container h-full">
-      <header class="flex justify-between px-2 py-1">
+      <!-- header -->
+      <header class="flex justify-between px-3 py-1">
         <div class="flex items-center">
           <i class="fa-brands fa-whatsapp text-primaryColorLight text-2xl"></i>
           <h4 class="text-sm font-sans text-blackColor ml-3">WhatsApp</h4>
@@ -39,21 +40,23 @@
           <i class="ri-close-line text-xl"></i>
         </div>
       </header>
-      <div class="flex h-[94%]">
-        <section class="flex flex-col justify-between p-3 text-blackColor/60">
-          <div class="pt-6 flex flex-col justify-center items-center space-y-3">
-            <i class="fa-solid fa-bars"></i>
-            <i class="ri-chat-smile-3-line"></i>
-            <i class="ri-phone-line"></i>
-            <i class="ri-donut-chart-line"></i>
-            <i
-              class="fa-regular fa-circle border-t border-blackColor/15 pt-4"
-            ></i>
+      <div class="flex h-[93%]">
+        <!-- icons by the side -->
+        <section
+          class="icons-side flex flex-col justify-between p-3 text-blackColor/60"
+        >
+          <div class="pt-2 flex flex-col justify-center items-center space-y-3">
+            <i class="ri-menu-line text-xl"></i>
+            <i class="ri-chat-smile-3-line text-xl"></i>
+            <i class="ri-phone-line text-xl"></i>
+            <i class="ri-donut-chart-line text-xl"></i>
+            <div class="bg-blackColor/10 w-9 h-[1px]"></div>
+            <i class="fa-regular fa-circle text-xl"></i>
           </div>
           <div class="flex flex-col justify-center items-center space-y-3">
             <i class="fa-regular fa-star"></i>
-            <i class="ri-archive-line"></i>
-            <i class="ri-settings-5-line"></i>
+            <i class="ri-archive-line text-xl"></i>
+            <i class="ri-settings-5-line text-xl"></i>
             <img
               src="img/profilepic6.avif"
               alt=""
@@ -61,27 +64,123 @@
             />
           </div>
         </section>
-        <div
-          class="bg-white shadow-lg border border-l-2 rounded-tl-lg p-5 basis-[95%] flex justify-between"
-        >
-          <div class="sidebar">
-            <div class="sidebar-header">Chats</div>
-            <div class="chat-preview">John Doe</div>
-            <div class="chat-preview">Jane Smith</div>
-          </div>
 
-          <div class="chat-window">
-            <div class="chat-header">John Doe</div>
-            <div class="messages">
+        <main class="basis-[96%] flex justify-between">
+          <!-- chat-box container -->
+          <section
+            class="aside bg-whiteColor shadow-md rounded-tl-lg border-r-2 border-[#ddd] basis-[30%] flex flex-col"
+          >
+            <!-- chat title  -->
+            <div class="p-4 flex justify-between items-center">
+              <h2 class="text-xl font-semibold">Chats</h2>
+              <div>
+                <i class="fa-regular fa-pen-to-square mr-4"></i>
+
+                <i class="ri-filter-3-line"></i>
+              </div>
+            </div>
+            <!-- chat input -->
+            <div
+              class="chat-input bg-whiteColor mx-4 px-3 py-1 rounded-md border mb-8"
+            >
+              <i
+                class="fa-solid fa-search -scale-x-100 text-sm text-blackColor/25 mr-2"
+              ></i>
+              <input
+                type="text"
+                placeholder="Search or start a new chat"
+                class="outline-none text-sm"
+              />
+            </div>
+            <!-- chat-box aside -->
+            <div
+              class="chat-box px-3 py-[6px] cursor-default flex hover:bg-blackColor/10"
+            >
+              <img
+                src="img/profile1.avif"
+                alt=""
+                class="w-14 h-14 rounded-full border-2 border-primaryColorLight"
+              />
+              <div class="ml-5 flex-1">
+                <div class="flex justify-between items-center">
+                  <h4 class="font-semibold text-[16px]">Sis🥰❤️💯</h4>
+                  <p class="text-blackColor/25 text-sm">12/06/25</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center">
+                    <i class="ri-check-double-line text-xl text-[#34B7F1]"></i>
+                    <p class="text-blackColor/25 ml-1">what do you want ?</p>
+                  </div>
+                  <i class="ri-pushpin-line text-blackColor/25"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chat-box px-3 py-[6px] cursor-default flex hover:bg-blackColor/10"
+            >
+              <img
+                src="img/profile1.avif"
+                alt=""
+                class="w-14 h-14 rounded-full"
+              />
+              <div class="ml-5 flex-1">
+                <div class="flex justify-between items-center">
+                  <h4 class="font-semibold text-[16px]">Sis🥰❤️💯</h4>
+                  <p class="text-blackColor/25 text-sm">12/06/25</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center">
+                    <i class="ri-check-double-line text-xl text-[#34B7F1]"></i>
+                    <p class="text-blackColor/25 ml-1">what do you want ?</p>
+                  </div>
+
+                  <i class="ri-pushpin-line text-blackColor/25"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chat-box px-3 py-[6px] cursor-default flex hover:bg-blackColor/10"
+            >
+              <img
+                src="img/profile1.avif"
+                alt=""
+                class="w-14 h-14 rounded-full"
+              />
+              <div class="ml-5 flex-1">
+                <div class="flex justify-between items-center">
+                  <h4 class="font-semibold text-[16px]">Sis🥰❤️💯</h4>
+                  <p class="text-blackColor/25 text-sm">12/06/25</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center">
+                    <i class="ri-check-double-line text-xl text-[#34B7F1]"></i>
+                    <p class="text-blackColor/25 ml-1">what do you want ?</p>
+                  </div>
+
+                  <i class="ri-pushpin-line text-blackColor/25"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="basis-[70%] flex flex-col bg-[#ece5dd]">
+            <div class="bg-whiteColor p-4 border-b border-[#ccc] font-bold">
+              John Doe
+            </div>
+            <div class="flex-1 p-5 overflow-y-auto flex flex-col gap-3">
               <div class="message received">Hey, are you there?</div>
               <div class="message sent">Yes, I’m here!</div>
             </div>
-            <div class="input-bar">
-              <input type="text" placeholder="Type a message" />
+            <div class="flex p-2 bg-whiteColor border-t border-[#ccc]">
+              <input
+                type="text"
+                placeholder="Type a message"
+                class="flex-1 p-2 rounded-[20px] border border-[#ccc] outline-none"
+              />
               <!-- <button>Send</button> -->
             </div>
-          </div>
-        </div>
+          </section>
+        </main>
       </div>
       <!-- test to post -->
       <!-- <div class="app">
