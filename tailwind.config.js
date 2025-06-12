@@ -16,8 +16,7 @@ module.exports = {
         blackColor: '#000',
       },
       backgroundImage: {
-        'custom-bg': 'url(../dist/img/image0.jpeg)',
-        'custom2-bg': "url('../dist/img/image1.jpeg')",
+        'custom-bg': 'url(../dist/img/bck-2.jpg)',
       },
     },
   },
