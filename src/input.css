@@ -2,84 +2,30 @@
 @tailwind utilities;
 @tailwind components;
 
-.chat-bo {
-  width: 300px;
-  height: 400px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  overflow-y: auto;
-  background-color: #e5ddd5;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: Arial, sans-serif;
-}
-
-/* Common message bubble */
-.message {
-  max-width: 70%;
-  padding: 10px 14px;
-  border-radius: 15px;
-  line-height: 1.4;
-  font-size: 14px;
-}
-
-/* Sent message (right side) */
-.sent {
-  align-self: flex-end;
-  background-color: #dcf8c6;
-}
-
-/* Received message (left side) */
-.received {
-  align-self: flex-start;
-  background-color: #ffffff;
-}
-
-/* second one */
-.chat-container {
-  display: flex;
-  justify-content: flex-end; /* Aligns bubble to the right */
-  margin: 20px;
-}
-
-.chat-bubble {
-  position: relative;
-  background: #dcf8c6; /* WhatsApp green */
-  padding: 10px 15px;
-  border-radius: 10px;
-  max-width: 60%;
-  font-family: sans-serif;
-}
-
-.chat-bubble::after {
-  content: '';
-  position: absolute;
-  right: -4px;
-  top: 0;
-  width: -100px;
-  height: 0;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #dcf8c6;
-}
-
-/* style.css */
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #e5ddd5;
+  @apply m-0 font-sans bg-[#eee] h-full;
 }
 
 .message {
-  @apply max-w-[60%] px-3 py-4 rounded-xl text-[14px];
+  @apply max-w-[60%] px-3 py-4 rounded-xl text-[14px] relative;
+}
+
+.sent {
+  @apply bg-sentColor justify-end;
+}
+
+.sent-after::after {
+  content: '';
+  @apply absolute -right-1 top-0 w-[-100px] h-0 border-b-[10px] border-l-[10px] border-b-transparent border-l-[#dcf8c6];
 }
 
 .received {
   @apply bg-receivedColor justify-start;
 }
 
-.sent {
-  @apply bg-sentColor justify-end;
+.received-after::after {
+  content: '';
+  @apply absolute top-0 -left-[3px] w-[-100px] h-0 border-b-[10px] border-l-[10px] border-b-transparent border-l-[#fff];
 }
 
 .input-bar {

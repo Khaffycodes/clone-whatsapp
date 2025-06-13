@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
 
-  <body class="bg-[#eee] h-full">
+  <body>
     <main class="container h-full">
       <!-- header -->
       <header class="flex justify-between px-3 py-1">
@@ -398,14 +398,17 @@
               </div>
             </div>
             <!-- diplay messages -->
-            <div class="flex-1 p-5 overflow-y-auto flex flex-col gap-3">
-              <div class="message received">
+            <div
+              class="flex-1 p-5 overflow-y-auto flex flex-col gap-3 relative"
+            >
+              <div class="message received received-after">
                 Hey, are you there? Lorem, ipsum dolor sit amet consectetur
                 adipisicing elit. Recusandae aliquam ab doloribus dolor sit
                 laboriosam culpa provident hic aut autem. Odio harum non hic
                 voluptates veritatis ipsam delectus, nulla possimus.
               </div>
-              <div class="message sent">Yes, I’m here!</div>
+
+              <div class="message sent sent-after">Yes, I’m here!</div>
             </div>
             <div class="flex p-2 bg-whiteColor border-t border-[#ccc]">
               <input
@@ -420,11 +423,7 @@
       </div>
       <!-- test to post -->
       <!-- <div class="app">
-            <aside class="sidebar">
-              <div class="sidebar-header">Chats</div>
-              <div class="chat-preview">John Doe</div>
-              <div class="chat-preview">Jane Smith</div>
-            </aside>
+            
 
             <main class="chat-window">
               <div class="chat-header">John Doe</div>
