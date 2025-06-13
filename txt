@@ -31,3 +31,12 @@ Darker Green (Header/chat bubbles) | Green Dark | `#075E54` | | Chat Background
 Received Message Bubble | White | `#FFFFFF` | | Input Area Background | Light
 Gray | `#F0F0F0` | | Timestamp Text | Gray | `#999999` | | Message Text | Dark
 Gray | `#303030` |
+
+.sent-after::after {
+  content: '';
+  @apply absolute -right-1 top-0 w-[-100px] h-0 border-b-[10px] border-l-[10px] border-b-transparent border-l-[#dcf8c6];
+}
+
+.received-after::after {
+  content: '';
+  @apply absolute top-0 -left-[3px] w-[-100px] h-0 border-b-[10px] border-l-[10px] border-b-transparent border-l-[#fff];}

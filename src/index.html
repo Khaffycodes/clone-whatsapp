@@ -98,7 +98,7 @@
               />
             </div>
             <!-- chat-box aside -->
-            <div id="chat-box-container" class="overflow-scroll">
+            <div id="chat-box-container" class="overflow-y-scroll">
               <!-- chat-box-1 -->
               <div
                 class="chat-box ml-2 px-2 py-3 cursor-default flex hover:bg-blackColor/5 rounded-md"
@@ -398,25 +398,53 @@
               </div>
             </div>
             <!-- diplay messages -->
-            <div
-              class="flex-1 p-5 overflow-y-auto flex flex-col gap-3 relative"
-            >
-              <div class="message received received-after">
-                Hey, are you there? Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Recusandae aliquam ab doloribus dolor sit
-                laboriosam culpa provident hic aut autem. Odio harum non hic
-                voluptates veritatis ipsam delectus, nulla possimus.
+            <div class="flex-1 p-5 overflow-y-auto flex flex-col gap-3">
+              <div class="message received flex items-baseline">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
               </div>
 
-              <div class="message sent sent-after">Yes, I’m here!</div>
+              <div class="message sent flex items-baseline">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
+              </div>
+              <div class="message received flex items-baseline">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
+              </div>
+
+              <div class="message sent flex items-baseline">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
+              </div>
+              <div class="message received flex items-baseline">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
+              </div>
+
+              <div class="message sent flex items-baseline">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
+              </div>
+              <div class="message received flex items-baseline">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
+              </div>
+
+              <div class="message sent flex items-baseline">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
+              </div>
             </div>
-            <div class="flex p-2 bg-whiteColor border-t border-[#ccc]">
+            <div class="flex px-4 py-2 bg-whiteColor border-t border-[#ccc]">
               <input
                 type="text"
                 placeholder="Type a message"
                 class="flex-1 p-2 rounded-[20px] border border-[#ccc] outline-none"
               />
-              <!-- <button>Send</button> -->
+              <i class="fa-solid fa-microphone"></i>
+              <i class="ri-checkbox-multiple-blank-line"></i>
+              <i class="ri-close-line"></i>
             </div>
           </section>
         </main>

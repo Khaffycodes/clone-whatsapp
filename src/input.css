@@ -3,43 +3,30 @@
 @tailwind components;
 
 body {
-  @apply m-0 font-sans bg-[#eee] h-full;
+  @apply m-0 font-sans bg-[#eee];
 }
 
+/* Common message bubble */
 .message {
-  @apply max-w-[60%] px-3 py-4 rounded-xl text-[14px] relative;
+  @apply max-w-[70%] py-2 px-2 rounded-xl leading-normal text-[14px];
 }
 
+/* Sent message (right side) */
 .sent {
-  @apply bg-sentColor justify-end;
+  @apply self-end bg-sentColor;
 }
 
-.sent-after::after {
+/* Received message (left side) */
+.received {
+  @apply self-start bg-receivedColor;
+}
+
+/* .sent-after::after {
   content: '';
   @apply absolute -right-1 top-0 w-[-100px] h-0 border-b-[10px] border-l-[10px] border-b-transparent border-l-[#dcf8c6];
-}
-
-.received {
-  @apply bg-receivedColor justify-start;
 }
 
 .received-after::after {
   content: '';
   @apply absolute top-0 -left-[3px] w-[-100px] h-0 border-b-[10px] border-l-[10px] border-b-transparent border-l-[#fff];
-}
-
-.input-bar {
-}
-
-.input-bar input {
-}
-
-.input-bar button {
-  margin-left: 10px;
-  padding: 8px 16px;
-  border: none;
-  background-color: #25d366;
-  color: white;
-  border-radius: 20px;
-  cursor: pointer;
-}
+} */
