@@ -101,7 +101,7 @@
             <div id="chat-box-container" class="overflow-y-scroll">
               <!-- chat-box-1 -->
               <div
-                class="chat-box ml-2 px-2 py-3 cursor-default flex hover:bg-blackColor/5 rounded-md"
+                class="chat-box active ml-2 px-2 py-3 cursor-default flex hover:bg-blackColor/5 rounded-md"
               >
                 <img
                   src="../dist/img/profilepic.avif"
@@ -185,7 +185,7 @@
                 />
                 <div class="ml-5 flex-1">
                   <div class="flex justify-between items-center">
-                    <h4 class="font-semibold text-[16px]">Hiking group</h4>
+                    <h4 class="font-semibold text-[16px]">Swimming group</h4>
                     <p class="text-blackColor/25 text-sm">5:00pm</p>
                   </div>
                   <div class="flex justify-between items-center">
@@ -436,15 +436,20 @@
                 <p class="text-[10px] ml-6 text-[#aaa]">2:34pm</p>
               </div>
             </div>
-            <div class="flex px-4 py-2 bg-whiteColor border-t border-[#ccc]">
+            <div
+              class="px-4 py-2 bg-whiteColor border-t border-[#ccc] flex items-center text-blackColor/70"
+            >
+              <div class="flex items-center gap-x-6">
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="ri-attachment-2 -scale-x-100"></i>
+              </div>
               <input
                 type="text"
                 placeholder="Type a message"
-                class="flex-1 p-2 rounded-[20px] border border-[#ccc] outline-none"
+                class="flex-1 p-2 border border-[#ccc] bg-slate-600 outline-none placeholder:text-[14px]"
               />
+
               <i class="fa-solid fa-microphone"></i>
-              <i class="ri-checkbox-multiple-blank-line"></i>
-              <i class="ri-close-line"></i>
             </div>
           </section>
         </main>
