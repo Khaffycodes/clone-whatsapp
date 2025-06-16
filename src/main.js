@@ -1,17 +1,13 @@
-//toggle for nav
-// JavaScript for toggling the nav width
-// document.addEventListener('DOMContentLoaded', () => {
-//   const nav = document.getElementById('sidebar');
-//   const toggleBtn = document.getElementById('toggleNav');
+document.addEventListener('DOMContentLoaded', () => {
+  const view1 = document.getElementById('navView1');
+  const view2 = document.getElementById('navView2');
 
-//   toggleBtn.addEventListener('click', () => {
-//     nav.classList.toggle('w-[50px]'); // collapsed width
-//     nav.classList.toggle('w-[220px]'); // expanded width
-//     nav.classList.toggle('show-text');
+  const toggleBtns = document.querySelectorAll('.toggleNavView');
 
-//     const textItems = nav.querySelectorAll('p');
-//     textItems.forEach((p) => {
-//       p.classList.toggle('hidden');
-//     });
-//   });
-// });
+  toggleBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      view1.classList.toggle('hidden');
+      view2.classList.toggle('hidden');
+    });
+  });
+});
