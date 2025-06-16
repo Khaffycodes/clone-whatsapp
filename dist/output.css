@@ -677,6 +677,14 @@ video {
   height: 95%;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1076,6 +1084,21 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .pt-2 {
