@@ -28,35 +28,34 @@
     <main class="container h-full">
       <!-- mobile nav -->
       <nav
-        class="mnav px-3 py-2 bg-red-600 fixed w-[220px] rounded-tr-md rounded-br-md h-screen transition-all duration-300 z-20"
+        class="mnav px-3 py-2 bg-red-600 fixed w-[220px] flex flex-col justify-between rounded-tr-md rounded-br-md h-screen transition-all duration-300 z-20"
       >
-        <div class="flex items-center">
-          <i class="fa-brands fa-whatsapp text-primaryColorLight text-2xl"></i>
-          <h4 class="text-sm font-sans text-blackColor ml-3">WhatsApp</h4>
-        </div>
-        <!-- nav trigger btn -->
-        <div class="mnav__close-btn mt-4">
-          <i
-            class="mnav__close-btn-icon text-blue-600 ri-menu-line text-xl"
-          ></i>
-        </div>
-        <!-- icons -->
-        <div class="flex flex-col h-full bg-slate-600">
-          <div class="pt-2 flex flex-col space-y-3 justify-start">
+          <div class="flex flex-col gap-y-3">
+            <div class="flex items-center">
+              <i
+                class="fa-brands fa-whatsapp text-primaryColorLight text-2xl"
+              ></i>
+              <h4 class="text-sm font-sans text-blackColor ml-3">WhatsApp</h4>
+            </div>
+            <!-- nav trigger btn -->
+            <div class="mnav__close-btn">
+              <i
+                class="mnav__close-btn-icon text-blue-600 ri-menu-line text-xl"
+              ></i>
+            </div>
             <div class="flex items-center">
               <i class="ri-chat-smile-3-line text-xl"></i>
-              <p>chats</p>
+              <p>Chats</p>
             </div>
             <div class="flex items-center">
               <i class="ri-phone-line text-xl"></i>
-              <p>phone</p>
+              <p>Phone</p>
             </div>
             <div class="flex items-center">
               <i class="ri-donut-chart-line text-xl"></i>
-              <p>status</p>
+              <p>Status</p>
             </div>
-
-            <div class="bg-blackColor/10 w-9 h-[1px]"></div>
+             <div class="bg-blackColor/10 w-full h-[1px]"></div>
             <div class="flex items-center">
               <i
                 class="fa-regular fa-circle rounded-full text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-500 to-purple-500"
@@ -64,10 +63,11 @@
               <p>Meta AI</p>
             </div>
           </div>
-          <div class="flex flex-col space-y-3 justify-end">
+
+          <div>
             <div class="flex items-center">
               <i class="fa-regular fa-star"></i>
-              <p>starred messages</p>
+              <p>Starred messages</p>
             </div>
             <div class="flex items-center">
               <i class="ri-archive-line text-xl"></i>
@@ -78,7 +78,7 @@
               <p>Settings</p>
             </div>
 
-            <div class="bg-blackColor/10 w-9 h-[1px]"></div>
+            <div class="bg-blackColor/10 w-full h-[1px]"></div>
             <div class="flex items-center">
               <img
                 src="../dist/img/profilepic6.avif"
@@ -89,6 +89,21 @@
             </div>
           </div>
         </div>
+
+        <!-- icons -->
+        <!-- <div class="flex flex-col h-full bg-slate-600">
+          <div class="pt-2 flex flex-col space-y-3 justify-start">
+           
+           
+            
+
+            <div class="bg-blackColor/10 w-9 h-[1px]"></div>
+           
+          </div>
+          <div class="flex flex-col space-y-3 justify-end">
+            
+          </div>
+        </div> -->
       </nav>
 
       <!-- header -->
