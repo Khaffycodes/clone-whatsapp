@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
 
-  <body>
-     <header class="flex justify-between px-3 py-1">
+  <body >
+      <header class="flex justify-between px-3 py-1">
         <div class="flex items-center">
           <i class="fa-brands fa-whatsapp text-primaryColorLight text-2xl"></i>
           <h4 class="text-sm font-sans text-blackColor ml-3">WhatsApp</h4>
@@ -37,14 +37,15 @@
           <i class="ri-checkbox-multiple-blank-line text-sm"></i>
           <i class="ri-close-line text-xl"></i>
         </div>
-      </header> 
-    <main class="container h-screen flex">
+      </header>
+    
+    <main class="container flex">
+      
       <!-- side nav -->
-     <section class=" ">
+     <section class="hidden">
         <!-- View1 -->
-        <div id="navView1" class="bg-[#eee] flex-1 h-screen">
-        
-      <nav id="sidebar"
+      <div id="navView1" class="bg-[#eee] flex-1 h-screen">   
+      <nav id=""
         class=" px-1 py-2 w-[50px] flex flex-col justify-between h-[94%] transition-all duration-300 z-20"
       >
           <div class="flex flex-col gap-y-1">
@@ -85,7 +86,7 @@
       <!-- displayed view on click -->
          <nav id="navView2"
           
-        class="px-1 py-2 bg-[#eee] w-[220px] flex flex-col justify-between rounded-tr-md rounded-br-md h-screen z-20 hidden absolute top-0 left-0  transform -translate-x-full transition-transform duration-300"
+        class="px-1 py-2 bg-[#f8f7f7] w-[220px] flex flex-col justify-between rounded-tr-lg rounded-br-md h-screen z-20 hidden absolute top-0 left-0  transform -translate-x-full transition-transform duration-300"
       >
           <div class="flex flex-col gap-y-1">
             <div class="flex items-center px-2">
@@ -148,11 +149,10 @@
         </div>  
       </nav>       
      </section>
-     <section class="h-[93%]">
-        <div class="basis-[96%] flex justify-between">
-          <!-- chat-box section -->
-          <section
-            class="aside bg-whiteColor shadow-md rounded-tl-lg border-r-2 border-[#ddd] basis-[30%] flex flex-col"
+     
+  <section class="flex-1 flex h-[93vh] ">
+     <div
+            class=" bg-whiteColor shadow-md rounded-tl-lg border-r-2 border-[#ddd] basis-[30%] flex flex-col"
           >
             <!-- chat title  -->
             <div class="p-4 flex justify-between items-center">
@@ -165,7 +165,7 @@
             </div>
             <!-- chat input -->
             <div
-              class="chat-input bg-whiteColor mx-4 px-3 py-1 rounded-md border mb-8"
+              class="chat-input bg-red-400 mx-4 px-3 py-1 rounded-md border mb-8"
             >
               <i
                 class="fa-solid fa-search -scale-x-100 text-sm text-blackColor/25 mr-2"
@@ -448,9 +448,9 @@
                 </div>
               </div>
             </div>
-          </section>
+          </div>
 
-          <section
+          <div
             class="basis-[70%] flex flex-col bg-custom-bg bg-contain bg-center"
           >
             <!-- chat header in display section -->
@@ -530,9 +530,9 @@
               </div>
               <i class="fa-solid fa-microphone"></i>
             </div>
-          </section>
-        </div>
-     </section>
+          </div>
+  </section>
+     
     </main>
 
       <script src="main.js"></script>
