@@ -25,12 +25,7 @@
   </head>
 
   <body>
-    <main class="container h-full">
-      <!-- side nav -->
-
-       <section class="flex ">
-        <div id="navView1" class="bg-blue-400 flex-1 h-screen">
-        <header class="flex justify-between px-3 py-1">
+     <header class="flex justify-between px-3 py-1">
         <div class="flex items-center">
           <i class="fa-brands fa-whatsapp text-primaryColorLight text-2xl"></i>
           <h4 class="text-sm font-sans text-blackColor ml-3">WhatsApp</h4>
@@ -43,8 +38,14 @@
           <i class="ri-close-line text-xl"></i>
         </div>
       </header> 
+    <main class="container h-screen flex">
+      <!-- side nav -->
+     <section class=" ">
+        <!-- View1 -->
+        <div id="navView1" class="bg-[#eee] flex-1 h-screen">
+        
       <nav id="sidebar"
-        class=" px-1 py-2 bg-slate-400 w-[50px] flex flex-col justify-between rounded-tr-md rounded-br-md h-[94%] transition-all duration-300 z-20"
+        class=" px-1 py-2 w-[50px] flex flex-col justify-between h-[94%] transition-all duration-300 z-20"
       >
           <div class="flex flex-col gap-y-1">
             <!-- nav trigger btn -->
@@ -81,9 +82,10 @@
       </nav>
       </div>
     
+      <!-- displayed view on click -->
          <nav id="navView2"
           
-        class="px-1 py-2 bg-green-400  w-[220px] flex flex-col justify-between rounded-tr-md rounded-br-md h-screen z-20 hidden absolute top-0 left-0  transform -translate-x-full transition-transform duration-300"
+        class="px-1 py-2 bg-[#eee] w-[220px] flex flex-col justify-between rounded-tr-md rounded-br-md h-screen z-20 hidden absolute top-0 left-0  transform -translate-x-full transition-transform duration-300"
       >
           <div class="flex flex-col gap-y-1">
             <div class="flex items-center px-2">
@@ -145,52 +147,8 @@
           </div>
         </div>  
       </nav>       
-   </section>
-
-      <!-- header -->
-      <header class="hidden justify-between px-3 py-1">
-        <div class="flex items-center">
-          <i class="fa-brands fa-whatsapp text-primaryColorLight text-2xl"></i>
-          <h4 class="text-sm font-sans text-blackColor ml-3">WhatsApp</h4>
-        </div>
-        <div
-          class="flex justify-between items-center w-[10%] text-blackColor/60"
-        >
-          <i class="ri-subtract-line text-sm"></i>
-          <i class="ri-checkbox-multiple-blank-line text-sm"></i>
-          <i class="ri-close-line text-xl"></i>
-        </div>
-      </header>
-      <main class="hidden h-[93%]">
-        <!-- icons by the side -->
-        <nav
-          class="icons-side flex flex-col justify-between p-3 text-blackColor/60"
-        >
-          <div class="pt-2 flex flex-col justify-center items-center space-y-3">
-            <i class="ri-menu-line text-xl"></i>
-            <div>
-              <i class="ri-chat-smile-3-line text-xl"></i>
-            </div>
-            <i class="ri-phone-line text-xl"></i>
-            <i class="ri-donut-chart-line text-xl"></i>
-            <div class="bg-blackColor/10 w-9 h-[1px]"></div>
-            <i
-              class="fa-regular fa-circle rounded-full text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-500 to-purple-500"
-            ></i>
-          </div>
-          <div class="flex flex-col justify-center items-center space-y-3">
-            <i class="fa-regular fa-star"></i>
-            <i class="ri-archive-line text-xl"></i>
-            <div class="bg-blackColor/10 w-9 h-[1px]"></div>
-            <i class="ri-settings-5-line text-xl"></i>
-            <img
-              src="../dist/img/profilepic6.avif"
-              alt=""
-              class="w-8 h-8 rounded-full"
-            />
-          </div>
-        </nav>
-
+     </section>
+     <section class="h-[93%]">
         <div class="basis-[96%] flex justify-between">
           <!-- chat-box section -->
           <section
@@ -574,9 +532,10 @@
             </div>
           </section>
         </div>
-      </main>
+     </section>
+    </main>
 
       <script src="main.js"></script>
-    </main>
+   
   </body>
 </html>

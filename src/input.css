@@ -3,7 +3,7 @@
 @tailwind components;
 
 body {
-  @apply m-0 font-sans bg-[#b82626];
+  @apply m-0 font-sans bg-[#eee];
 }
 .active {
   @apply bg-black/5;
