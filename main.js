@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         view2.classList.add('translate-x-0');
 
         // Hide View1
-        view1.classList.add('hidden');
+        // view1.classList.add('hidden');
       } else {
         // Animate out
         view2.classList.remove('translate-x-0');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           view2.classList.add('hidden');
           view1.classList.remove('hidden');
-        }, 300); // match transition duration
+        }, 200); // match transition duration
       }
     });
   });
